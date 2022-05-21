@@ -40,7 +40,7 @@ function RefreshBadge() {
 </svelte:head>
 
 Logo
-<div class="p-8 grid grid-cols-2 items-center gap-8 place-items-start">
+<div class="grid grid-cols-2 place-items-start items-center gap-8 p-8">
   <Label text="Logo ID" />
   <TextBox bind:text="{Metadata.LogoId}" />
 
@@ -52,7 +52,7 @@ Logo
 </div>
 
 LHS
-<div class="p-8 grid grid-cols-2 items-center gap-8 place-items-start">
+<div class="grid grid-cols-2 place-items-start items-center gap-8 p-8">
   <Label text="Text" />
   <TextBox bind:text="{Metadata.LeftText}" />
 
@@ -61,7 +61,7 @@ LHS
 </div>
 
 RHS
-<div class="p-8 grid grid-cols-2 items-center gap-8 place-items-start">
+<div class="grid grid-cols-2 place-items-start items-center gap-8 p-8">
   <Label text="Text" />
   <TextBox bind:text="{Metadata.RightText}" />
 
@@ -70,7 +70,7 @@ RHS
 </div>
 
 Style
-<div class="p-8 grid grid-cols-2 items-center gap-8 place-items-start">
+<div class="grid grid-cols-2 place-items-start items-center gap-8 p-8">
   <Label text="Badge style" />
   <Dropdown bind:selectedIndex="{Metadata.Style}" />
 </div>
@@ -79,11 +79,10 @@ Style
 <BadgePreview src="{liveUrl}" />
 <div class="flex justify-center">
   <button
-    class="bg-transparent hover:bg-emerald-500 text-emerald-700 font-semibold hover:text-white py-2 px-4 border border-emerald-500 hover:border-transparent rounded"
+    class="rounded border border-emerald-500 bg-transparent py-2 px-4 font-semibold text-emerald-700 hover:border-transparent hover:bg-emerald-500 hover:text-white"
     on:click="{() => RefreshBadge()}">
     Refresh
   </button>
 </div>
 
 <Footer />
-

@@ -13,8 +13,9 @@ export let selectedIndex: number;
 </script>
 
 <select
-  class="w-full h-10 hover:bg-gray-500 focus:ring rounded-sm focus:ring-emerald-400 text-center"
-  bind:value="{selectedIndex}">
+  class="h-10 w-full rounded-sm text-center hover:bg-gray-500 focus:ring focus:ring-emerald-400"
+  bind:value="{selectedIndex}"
+>
   {#each badgeTypes as badgeType}
     <option value="{badgeType.id}">
       {badgeType.label}

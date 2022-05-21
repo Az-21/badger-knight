@@ -43,4 +43,3 @@ function ParseStyle(style: BadgeType): string {
   }
 }
 </script>
-

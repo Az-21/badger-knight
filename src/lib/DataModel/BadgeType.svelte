@@ -7,4 +7,3 @@ export enum BadgeType {
   ForTheBadge
 }
 </script>
-

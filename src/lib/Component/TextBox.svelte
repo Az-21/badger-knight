@@ -7,15 +7,15 @@ export let type: string = "text";
 {#if type === "text"}
   <input
     type="text"
-    class="w-full h-10 hover:bg-gray-500 focus:ring rounded-sm focus:ring-emerald-400 text-center"
+    class="h-10 w-full rounded-sm text-center hover:bg-gray-500 focus:ring focus:ring-emerald-400"
     bind:value="{text}" />
 {:else if type === "number"}
   <input
     type="number"
-    class="w-full h-10 hover:bg-gray-500 focus:ring rounded-sm focus:ring-emerald-400 text-center"
+    class="h-10 w-full rounded-sm text-center hover:bg-gray-500 focus:ring focus:ring-emerald-400"
     bind:value="{text}" />
 {:else}
   <input
-    class="w-full h-10 hover:bg-gray-500 focus:ring rounded-sm focus:ring-emerald-400 text-center"
+    class="h-10 w-full rounded-sm text-center hover:bg-gray-500 focus:ring focus:ring-emerald-400"
     bind:value="{text}" />
 {/if}

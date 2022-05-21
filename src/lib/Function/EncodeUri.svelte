@@ -10,4 +10,3 @@ export function EncodeUri(uri: string): string {
   return encodeURIComponent(uri);
 }
 </script>
-

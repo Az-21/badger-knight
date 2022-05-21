@@ -15,4 +15,3 @@ export interface IBadgeMetadata {
   Style: BadgeType;
 }
 </script>
-

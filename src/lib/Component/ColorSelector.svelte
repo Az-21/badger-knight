@@ -18,4 +18,4 @@ export let color: string;
 </script>
 
 <!-- Color selector -->
-<input type="color" class="w-full h-10 no-border" bind:value="{color}" />
+<input type="color" class="no-border h-10 w-full" bind:value="{color}" />
