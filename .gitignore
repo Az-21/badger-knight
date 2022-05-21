@@ -73,6 +73,11 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
 .env
 .env.development.local
 .env.test.local
@@ -96,6 +101,8 @@ dist
 # Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
+.env.*
+!.env.example
 
 # vuepress build output
 .vuepress/dist
