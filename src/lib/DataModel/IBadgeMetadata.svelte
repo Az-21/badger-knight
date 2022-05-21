@@ -1,17 +1,18 @@
 <script lang="ts" context="module">
-	import type { BadgeType } from './BadgeType.svelte';
-	export interface IBadgeMetadata {
-		// [ Logo + Left | Right ]
-		LogoId: string;
-		LogoColor: string;
-		LogoPadding: string;
+import type { BadgeType } from "./BadgeType.svelte";
+export interface IBadgeMetadata {
+  // [ Logo + Left | Right ]
+  LogoId: string;
+  LogoColor: string;
+  LogoPadding: string;
 
-		LeftText: string;
-		LeftColor: string;
+  LeftText: string;
+  LeftColor: string;
 
-		RightText: string;
-		RightColor: string;
+  RightText: string;
+  RightColor: string;
 
-		Style: BadgeType;
-	}
+  Style: BadgeType;
+}
 </script>
+

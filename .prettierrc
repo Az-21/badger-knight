@@ -1,6 +1,21 @@
 {
-	"useTabs": true,
-	"singleQuote": true,
+	"useTabs": false,
+	"tabWidth": 2,
+	"singleQuote": false,
 	"trailingComma": "none",
-	"printWidth": 100
-}
+	"proseWrap": "always",
+	"semi": true,
+	"bracketSpacing": true,
+	"bracketSameLine": false,
+	"arrowParens": "avoid",
+	"htmlWhitespaceSensitivity": "ignore",
+	"endOfLine": "crlf",
+	"singleAttributePerLine": true,
+	"svelteSortOrder": "options-styles-scripts-markup",
+	"svelteStrictMode": true,
+	"svelteBracketNewLine": false,
+	"svelteAllowShorthand": false,
+	"svelteIndentScriptAndStyle": false,
+	"printWidth": 120
+  }
+  

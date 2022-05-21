@@ -1,12 +1,13 @@
 <script lang="ts" context="module">
-	export function EncodeUri(uri: string): string {
-		// Handle dash
-		uri = uri.replace('-', '--');
+export function EncodeUri(uri: string): string {
+  // Handle dash
+  uri = uri.replace("-", "--");
 
-		// Handle underscore
-		uri = uri.replace('_', '__');
+  // Handle underscore
+  uri = uri.replace("_", "__");
 
-		// Encode and return
-		return encodeURIComponent(uri);
-	}
+  // Encode and return
+  return encodeURIComponent(uri);
+}
 </script>
+
