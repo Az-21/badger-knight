@@ -14,8 +14,10 @@ input[type="color"]::-webkit-color-swatch {
 </style>
 
 <script lang="ts">
+export let label: string;
 export let color: string;
 </script>
 
 <!-- Color selector -->
-<input type="color" class="no-border h-10 w-full" bind:value="{color}" />
+<p class=" text-md font-medium text-zinc-200">{label}</p>
+<input type="color" class="no-border h-12 w-1/2" bind:value="{color}" />
