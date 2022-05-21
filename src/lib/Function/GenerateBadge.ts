@@ -25,16 +25,11 @@ export function GenerateBadge(metadata: IBadgeMetadata): string {
 
 function ParseStyle(style: BadgeType): string {
   switch (style) {
-    case BadgeType.Flat:
-      return "flat";
-    case BadgeType.Social:
-      return "social";
-    case BadgeType.Plastic:
-      return "plastic";
-    case BadgeType.FlatSquare:
-      return "flat-square";
-    case BadgeType.ForTheBadge:
-      return "for-the-badge";
+    case BadgeType.Flat: return "flat";
+    case BadgeType.Social: return "social";
+    case BadgeType.Plastic: return "plastic";
+    case BadgeType.FlatSquare: return "flat-square";
+    case BadgeType.ForTheBadge: return "for-the-badge";
 
     default:
       console.error("Uncaught badge type in src/Function/GenerateBadge.ts");
