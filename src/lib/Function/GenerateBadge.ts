@@ -1,6 +1,6 @@
 import { EncodeUri } from "./EncodeUri";
-import { BadgeType } from "../DataModel/BadgeType";
-import { IBadgeMetadata } from "../DataModel/IBadgeMetadata";
+import { BadgeType } from "../DataModel/BadgeType.svelte";
+import type { IBadgeMetadata } from "../DataModel/IBadgeMetadata.svelte";
 
 export function GenerateBadge(metadata: IBadgeMetadata): string {
   let url: string = "https://shields.io/badge/";
