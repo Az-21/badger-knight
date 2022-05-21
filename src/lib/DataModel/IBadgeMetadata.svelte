@@ -4,7 +4,7 @@
 		// [ Logo + Left | Right ]
 		LogoId: string;
 		LogoColor: string;
-		LogoPadding: number;
+		LogoPadding: string;
 
 		LeftText: string;
 		LeftColor: string;
