@@ -19,5 +19,7 @@ export let color: string;
 </script>
 
 <!-- Color selector -->
-<p class=" text-md font-medium text-zinc-200">{label}</p>
-<input type="color" class="no-border h-12 w-1/2" bind:value="{color}" />
+<div>
+  <p class=" text-md font-medium text-zinc-200">{label}</p>
+  <input type="color" class="no-border h-12 w-full" bind:value="{color}" />
+</div>

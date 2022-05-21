@@ -12,13 +12,15 @@ const badgeTypes = [
 export let selectedIndex: number;
 </script>
 
-<select
-  class="h-10 w-full rounded-sm text-center hover:bg-gray-500 focus:ring focus:ring-emerald-400"
-  bind:value="{selectedIndex}"
->
-  {#each badgeTypes as badgeType}
-    <option value="{badgeType.id}">
-      {badgeType.label}
-    </option>
-  {/each}
-</select>
+<div>
+  <p class=" text-md font-medium text-zinc-200">Badge style</p>
+  <select
+    class="h-12 w-full rounded-sm bg-zinc-800 text-center text-white focus:ring focus:ring-emerald-400"
+    bind:value="{selectedIndex}">
+    {#each badgeTypes as badgeType}
+      <option value="{badgeType.id}">
+        {badgeType.label}
+      </option>
+    {/each}
+  </select>
+</div>

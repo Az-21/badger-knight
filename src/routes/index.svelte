@@ -3,7 +3,6 @@ export const prerender = true;
 </script>
 
 <script lang="ts">
-import Label from "../lib/Component/Label.svelte";
 import Footer from "../lib/Component/Footer.svelte";
 import TextBox from "../lib/Component/TextBox.svelte";
 import Dropdown from "../lib/Component/Dropdown.svelte";
@@ -39,42 +38,18 @@ function RefreshBadge() {
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-Logo
-<div class="grid grid-cols-2 place-items-start items-center gap-8 p-8">
-  <Label text="Logo ID" />
-  <TextBox bind:text="{Metadata.LogoId}" />
-
-  <Label text="Logo color" />
-  <ColorSelector bind:color="{Metadata.LogoColor}" />
-
-  <Label text="Logo padding" />
-  <TextBox type="number" bind:text="{Metadata.LogoPadding}" />
-</div>
-
-LHS
-<div class="grid grid-cols-2 place-items-start items-center gap-8 p-8">
-  <Label text="Text" />
-  <TextBox bind:text="{Metadata.LeftText}" />
-
-  <Label text="Background color" />
-  <ColorSelector bind:color="{Metadata.LeftColor}" />
-</div>
-
-RHS
-<div class="grid grid-cols-2 place-items-start items-center gap-8 p-8">
-  <Label text="Text" />
-  <TextBox bind:text="{Metadata.RightText}" />
-
-  <Label text="Background color" />
-  <ColorSelector bind:color="{Metadata.RightColor}" />
-</div>
-
-Style
-<div class="grid grid-cols-2 place-items-start items-center gap-8 p-8">
-  <Label text="Badge style" />
+<div class="mx-auto grid w-3/5 grid-cols-2 gap-x-32 gap-y-12">
+  <TextBox label="Left text" bind:text="{Metadata.LeftText}" />
+  <ColorSelector label="Left background" bind:color="{Metadata.LeftColor}" />
+  <TextBox label="Right text" bind:text="{Metadata.RightText}" />
+  <ColorSelector label="Right background" bind:color="{Metadata.RightColor}" />
+  <TextBox label="Logo ID" bind:text="{Metadata.LogoId}" />
+  <ColorSelector label="Logo color" bind:color="{Metadata.LogoColor}" />
+  <TextBox label="Logo padding" type="number" bind:text="{Metadata.LogoPadding}" />
   <Dropdown bind:selectedIndex="{Metadata.Style}" />
 </div>
 
+<br />
 {url}
 <BadgePreview src="{liveUrl}" />
 <div class="flex justify-center">
