@@ -3,7 +3,7 @@
 
   <ul class="flex flex-wrap items-center text-gray-400 dark:text-gray-400">
     <li>
-      <a href="#" class="mr-4 hover:underline">🪲 Report Bug</a>
+      <a href="https://github.com/Az-21/badger-knight/issues/" class="mr-4 hover:underline">🪲 Report Bug</a>
     </li>
     <li>
       <a href="https://shields.io/" class="mr-4 font-bold text-white hover:underline">🛡️ Shields.io</a>

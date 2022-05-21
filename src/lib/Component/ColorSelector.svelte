@@ -19,7 +19,10 @@ export let color: string;
 </script>
 
 <!-- Color selector -->
-<div>
-  <p class=" text-md font-medium text-zinc-200">{label}</p>
+<div class="flex flex-col gap-y-4">
+  <div class="flex justify-between gap-x-2">
+    <p class=" text-md font-medium text-zinc-200">{label}</p>
+    <span class="mr-2 rounded bg-zinc-900 px-2.5 py-0.5 text-sm font-medium text-emerald-500">HEX</span>
+  </div>
   <input type="color" class="no-border h-12 w-full" bind:value="{color}" />
 </div>

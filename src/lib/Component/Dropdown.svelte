@@ -12,11 +12,12 @@ const badgeTypes = [
 export let selectedIndex: number;
 </script>
 
-<div>
-  <p class=" text-md font-medium text-zinc-200">Badge style</p>
-  <select
-    class="h-12 w-full rounded-sm bg-zinc-800 text-center text-white focus:ring focus:ring-emerald-400"
-    bind:value="{selectedIndex}">
+<div class="flex flex-col gap-y-4">
+  <div class="flex justify-between gap-x-2">
+    <p class=" text-md font-medium text-zinc-200">Badge style</p>
+    <span class="mr-2 rounded bg-zinc-900 px-2.5 py-0.5 text-sm font-medium text-blue-500">ENUM</span>
+  </div>
+  <select class="h-12 w-full rounded-sm bg-zinc-800 pl-4 text-white" bind:value="{selectedIndex}">
     {#each badgeTypes as badgeType}
       <option value="{badgeType.id}">
         {badgeType.label}
