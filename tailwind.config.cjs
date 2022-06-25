@@ -1,12 +1,14 @@
 const config = {
-  content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: { extend: {} },
+  content: ["./src/**/*.{html,js,svelte,ts}"],
+
   plugins: [require("daisyui")],
+  daisyui: {
+    styled: true,
+    base: true,
+    utils: true,
+    themes: ["garden", "black", "retro", "forest", "dracula", "business", "night"],
+  },
 };
 
-module.exports = {
-  config,
-  daisyui: {
-    themes: ["retro", "garden", "forest", "black", "dracula", "business", "night"],
-  },
-}
+module.exports = config;
