@@ -1,4 +1,5 @@
 <style>
+/* Remove the default webkit border on the color input box */
 input[type="color"] {
   border: none;
   background: none;
@@ -19,10 +20,11 @@ export let color: string;
 </script>
 
 <!-- Color selector -->
-<div class="flex flex-col gap-y-4">
-  <div class="flex justify-between gap-x-2">
-    <p class=" text-md font-medium text-zinc-200">{label}</p>
-    <span class="mr-2 rounded bg-zinc-900 px-2.5 py-0.5 text-sm font-medium text-emerald-500">HEX</span>
-  </div>
-  <input type="color" class="no-border h-12 w-full" bind:value="{color}" />
+<div class="form-control w-full">
+  <!-- svelte-ignore a11y-label-has-associated-control -->
+  <label class="label">
+    <span class="footer-title label-text">{label}</span>
+    <span class="badge badge-outline label-text-alt">hex</span>
+  </label>
+  <input type="color" class="h-20 w-full" bind:value="{color}" />
 </div>

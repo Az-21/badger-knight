@@ -9,27 +9,22 @@ onMount(() => {
 });
 </script>
 
-<nav class="mb-12 bg-zinc-800 py-12">
-  <div class="mx-auto w-3/5">
-    <div class="container mx-auto flex flex-wrap items-center justify-between">
-      <p class="text-3xl font-extrabold tracking-widest text-emerald-300">BADGER KNIGHT</p>
-      <div>
-        <a
-          class="pl-4 text-zinc-400 hover:text-emerald-500 hover:underline"
-          href="https://github.com/Az-21/badger-knight/">
-          GitHub
-        </a>
-        <a class="pl-4 text-zinc-400 hover:text-emerald-500 hover:underline" href="https://shields.io/">Shields.io</a>
-        <select data-choose-theme>
-          <option value="graden">Garden</option>
-          <option value="black">Black</option>
-          <option value="retro">Retro</option>
-          <option value="forest">Forest</option>
-          <option value="dracula">Dracula</option>
-          <option value="business">Business</option>
-          <option value="night">Night</option>
-        </select>
-      </div>
+<div class="mx-auto mb-8 w-full bg-base-300 py-6">
+  <div class="navbar mx-auto flex w-4/5">
+    <div class="navbar-start">
+      <p class="text-4xl font-bold">Badger Knight</p>
+    </div>
+
+    <div class="navbar-end">
+      <select class="select select-bordered" data-choose-theme>
+        <option value="graden">Garden</option>
+        <option value="black">Black</option>
+        <option value="retro">Retro</option>
+        <option value="forest">Forest</option>
+        <option value="dracula">Dracula</option>
+        <option value="business">Business</option>
+        <option value="night">Night</option>
+      </select>
     </div>
   </div>
-</nav>
+</div>

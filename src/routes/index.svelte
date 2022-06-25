@@ -15,7 +15,7 @@ import { GenerateBadge } from "../lib/Function/GenerateBadge.svelte";
 import type { IBadgeMetadata } from "../lib/DataModel/IBadgeMetadata.svelte";
 
 let Metadata: IBadgeMetadata = {
-  LogoId: "appveyor",
+  LogoId: "googlefit",
   LogoColor: "#ffffff",
   LogoPadding: "30",
   LeftText: "Left",
@@ -28,7 +28,7 @@ let Metadata: IBadgeMetadata = {
 $: url = GenerateBadge(Metadata);
 
 let liveUrl: string =
-  "https://shields.io/badge/Left-Right-blue?style=for-the-badge&logo=appveyor&logoColor=%23ffffff&logoWidth=30&labelColor=%232f3e46&color=%2352796f";
+  "https://shields.io/badge/Left-Right-blue?style=for-the-badge&logo=googlefit&logoColor=%23ffffff&logoWidth=30&labelColor=%232f3e46&color=%2352796f";
 
 function RefreshBadge() {
   liveUrl = url;
@@ -46,7 +46,7 @@ function CopyToClipboard() {
 
 <Navbar />
 
-<div class="mx-auto grid w-3/5 grid-cols-2 gap-y-16 gap-x-8">
+<div class="mx-auto grid w-4/5 grid-cols-2 gap-y-8 gap-x-16">
   <TextBox label="Left text" bind:text="{Metadata.LeftText}" />
   <ColorSelector label="Left background" bind:color="{Metadata.LeftColor}" />
   <TextBox label="Right text" bind:text="{Metadata.RightText}" />
@@ -57,21 +57,13 @@ function CopyToClipboard() {
   <Dropdown bind:selectedIndex="{Metadata.Style}" />
 </div>
 
-<div class="mx-auto flex w-3/5">
+<div class="mx-auto flex w-4/5">
   <BadgePreview liveUrl="{liveUrl}" url="{url}" />
 </div>
 
-<div class="mb-12 flex justify-center gap-x-12">
-  <button
-    class="rounded border border-emerald-500 bg-transparent py-2 px-4 font-semibold text-emerald-700 hover:border-transparent hover:bg-emerald-500 hover:text-white"
-    on:click="{() => RefreshBadge()}">
-    Regenerate Badge
-  </button>
-  <button
-    class="rounded border border-emerald-500 bg-transparent py-2 px-4 font-semibold text-emerald-700 hover:border-transparent hover:bg-emerald-500 hover:text-white"
-    on:click="{() => CopyToClipboard()}">
-    Copy to Clipboard
-  </button>
+<div class="mb-8 flex justify-center gap-x-12">
+  <button class="btn btn-outline px-12" on:click="{() => RefreshBadge()}">Regenerate Badge</button>
+  <button class="btn btn-outline px-12" on:click="{() => CopyToClipboard()}">Copy to Clipboard</button>
 </div>
 
 <Footer />

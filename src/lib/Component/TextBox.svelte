@@ -5,20 +5,23 @@ export let type: string = "string";
 </script>
 
 <!-- Textbox -->
-<div class="flex flex-col gap-y-4">
-  <div class="flex justify-between gap-x-2">
-    <p class=" text-md font-medium text-zinc-200">{label}</p>
-    <span class="mr-2 rounded bg-zinc-900 px-2.5 py-0.5 text-sm font-medium text-purple-500">{type.toUpperCase()}</span>
-  </div>
+<div class="form-control w-full">
+  <!-- svelte-ignore a11y-label-has-associated-control -->
+  <label class="label">
+    <span class="footer-title label-text">{label}</span>
+    <div>
+      {#if label === "Logo ID"}
+        <span class="label-text">
+          <a href="https://simpleicons.org/" class=" link mr-6">All Icons</a>
+        </span>
+      {/if}
 
+      <span class="badge badge-outline label-text-alt">{type}</span>
+    </div>
+  </label>
   {#if type === "int"}
-    <input
-      type="number"
-      class="h-12 w-full rounded-sm bg-zinc-800 pl-4 text-white hover:bg-zinc-900 focus:ring focus:ring-emerald-400"
-      bind:value="{text}" />
+    <input placeholder="Type here" class="input input-bordered input-lg h-20" bind:value="{text}" type="number" />
   {:else}
-    <input
-      class="h-12 w-full rounded-sm bg-zinc-800 pl-4 text-white hover:bg-zinc-900 focus:ring focus:ring-emerald-400"
-      bind:value="{text}" />
+    <input placeholder="Type here" class="input input-bordered input-lg h-20" bind:value="{text}" type="text" />
   {/if}
 </div>

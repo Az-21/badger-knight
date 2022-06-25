@@ -1,12 +1,20 @@
-<footer class="mx-auto flex justify-between bg-zinc-800 p-12">
-  <a href="https://github.com/Az-21/" class="text-gray-200 hover:text-emerald-500 hover:underline">💚 Made by Az-21</a>
+<div class="mx-auto bg-base-300 py-16">
+  <footer class="footer mx-auto w-4/5 text-base-content">
+    <div>
+      <span class="footer-title">Project Resources</span>
+      <a href="https://github.com/Az-21/badger-knight/" class="link link-hover">Source code on GitHub</a>
+      <a href="https://github.com/Az-21/badger-knight/issues/" class="link link-hover">Report a bug</a>
+      <a href="https://github.com/Az-21/badger-knight/issues/" class="link link-hover">Star on GitHub</a>
+    </div>
 
-  <ul class="flex flex-wrap items-center text-gray-400 dark:text-gray-400">
-    <li>
-      <a href="https://github.com/Az-21/badger-knight/issues/" class="mr-4 hover:underline">🪲 Report Bug</a>
-    </li>
-    <li>
-      <a href="https://shields.io/" class="mr-4 font-bold text-white hover:underline">🛡️ Shields.io</a>
-    </li>
-  </ul>
-</footer>
+    <div>
+      <span class="footer-title">Badge Resources</span>
+      <a href="https://shields.io/" class="link link-hover">Shields.io</a>
+      <a href="https://simpleicons.org/" class="link link-hover">Simple Icons</a>
+    </div>
+  </footer>
+  <div class="mx-auto flex w-4/5 pt-16">
+    <p class="pr-2">Made with 💚 by</p>
+    <a href="https://github.com/Az-21/" class="link">Az-21</a>
+  </div>
+</div>
