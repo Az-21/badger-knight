@@ -1,11 +1,7 @@
 const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
-
-  theme: {
-    extend: {}
-  },
-
-  plugins: []
+  theme: { extend: {} },
+  plugins: [require("daisyui")],
 };
 
 module.exports = config;
