@@ -4,4 +4,9 @@ const config = {
   plugins: [require("daisyui")],
 };
 
-module.exports = config;
+module.exports = {
+  config,
+  daisyui: {
+    themes: ["retro", "garden", "forest", "black", "dracula", "business", "night"],
+  },
+}
