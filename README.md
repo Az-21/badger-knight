@@ -1,41 +1,29 @@
-# create-svelte
+# Badger Knight
 
-Everything you need to build a Svelte project, powered by
-[`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Generate badges for your project's readme file.
 
-## Creating a project
+![Preview](https://res.cloudinary.com/az21/image/upload/v1656238814/github%20resources/badger-knight/screen_qbatau.png)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## WebApp Info
 
-```bash
-# create a new project in the current directory
-npm init svelte
+![Badge](https://shields.io/badge/-Svelte-blue?style=for-the-badge&logo=svelte&logoColor=%23ffffff&logoWidth=30&labelColor=%231a1a1a&color=%232a2a2a)
+![Badge](https://shields.io/badge/-TailwindCSS-blue?style=for-the-badge&logo=tailwindcss&logoColor=%23ffffff&logoWidth=30&labelColor=%231a1a1a&color=%232a2a2a)
 
-# create a new project in my-app
-npm init svelte my-app
-```
+<br>
 
-## Developing
+![](https://res.cloudinary.com/az21/image/upload/v1656235022/github%20resources/badger-knight/lighthouse_vueumh.svg)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a
-development server:
+## Credits
 
-```bash
-npm run dev
+- [Shields.io](https://shields.io/)
+- [Simple Icons](https://simpleicons.org/)
+- [DaisyUI](https://daisyui.com/) (for TailwindCSS)
+- [readme-pagespeed-insights](https://github.com/ankurparihar/readme-pagespeed-insights)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+<br>
 
-## Building
+## 💚 Support the Projects
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target
-> environment.
+- [Contribute to Shields.io](https://opencollective.com/shields) (Open Collective)
+- [Contribute to Simple Icons](https://opencollective.com/simple-icons) (Open Collective)
+- [Contribute to Badger Knight](https://www.buymeacoffee.com/az21) (Buy Me a Coffee)
